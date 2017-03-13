@@ -1,3 +1,5 @@
+// https://www.sitepoint.com/delay-sleep-pause-wait/
+
 function sleep(milliseconds) {
   var start = new Date().getTime()
 
