@@ -1,3 +1,5 @@
+// javaScript objects behave like hash :)
+
 const body = {
     name            : 'Account1',
     resetPasswordUrl: 'myaccnr.com/reset',
