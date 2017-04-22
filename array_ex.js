@@ -29,6 +29,10 @@ print_array(cars, "Add 'Ford' at the beginning")
 cars.splice(2, 1)
 print_array(cars, "Deleted 3rd element")
 
+// check if value is in array
+var result = cars.indexOf("Fiat")
+console.log(`Index of 'Fiat' is ${result}`)
+
 // sort the array
 cars.sort()
 print_array(cars, "Sorted")
