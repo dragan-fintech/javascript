@@ -1,5 +1,5 @@
 /*
-set_ex
+underscore_ex
 
 Run: node <file.js>
 

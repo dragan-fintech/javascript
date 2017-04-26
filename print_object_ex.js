@@ -9,4 +9,4 @@ const body = {
 console.log(`body = ${body}`)  // -> body = [object Object]
 
 // good :)
-console.log(`body = ${JSON.stringify(body)}`)  // -> body = [object Object]
+console.log(`body = ${JSON.stringify(body)}`)  // -> body = { ... }
