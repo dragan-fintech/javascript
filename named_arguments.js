@@ -29,15 +29,30 @@ function foo_es6(arg1, {pera='pera_def', zika='zika_def'}={})
     console.log('zika=', zika)
 }
 
+function goo_es6({pera, zika='zika_def'}={})
+{
+    console.log('*** goo_es6 ***')
+
+    if (pera == undefined) {
+        console.log('pera must be provided!')
+        return
+    }
+
+    console.log('pera=', pera)
+    console.log('zika=', zika)
+}
+
 
 
 // foo('first argument', {zika: 5, pera:'pera_arg'})
 // goo('first argument', {pera:'perica', zika: 'zikica'})
-goo('first_arg')
+//goo('first_arg')
 // hoo({arg1: 1}, {arg1:2, arg2: 3})
 
 // foo_es6('first argument', {zika: 5, pera:'pera_arg'})
 // foo_es6('first argument')
 // foo_es6('first argument', {pera:'perica'})
 // foo_es6('first argument', {zika: 6})
-
+goo_es6()
+goo_es6({pera: 'perica'})
+goo_es6({zika: 'zikica', pera: 'perica'})
