@@ -7,6 +7,7 @@ Run: node <file.js>
 */
 
 class Transaction {
+
     constructor({type, amount, description}={}) {
         console.log('*** transaction ***')
 
@@ -23,6 +24,8 @@ class Transaction {
         this.type = type
         this.amount = amount
         this.description = description
+
+        Transaction.counter++
     }
 
     print() {
@@ -34,6 +37,12 @@ class Transaction {
             console.log(`description: ${this.description}`)
         }
     }
+
+    static print_counter(message) {
+        console.log(`${message}: There are ${Transaction.counter} Transaction objects!`)
+    }
 }
+
+Transaction.counter = 0
 
 module.exports = Transaction
