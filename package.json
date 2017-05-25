@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/dragan-fintech/javascript#readme",
   "dependencies": {
+    "async": "^2.4.0",
     "underscore": "^1.8.3"
   }
 }
