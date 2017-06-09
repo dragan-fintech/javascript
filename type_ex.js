@@ -1,1 +1,1 @@
-print(typeof(37)) 
+console.log(typeof(37)) 
