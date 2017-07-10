@@ -69,8 +69,16 @@ function timeFromNowTest(timeToSubstractMilliseconds) {
     console.log(t)
 }
 
+function printDates() {
+    console.log(`Date.now(): ${Date.now()}`);
+    let t = new Date()
+    console.log(`t = new Date(): ${t}`);
+    console.log(`t.getTime(): ${t.getTime()}`);
+}
 
-//add_30_min_to_current_time()
-//subtract_90_days_from_current_time()
-timeFromNowTest(1000*60*60*24*5)  // subtruct 5 days
-timeFromNowTest(1000*60*60*24*90)  // subtruct 90 days
+
+printDates()
+// add_30_min_to_current_time()
+// subtract_90_days_from_current_time()
+// timeFromNowTest(1000*60*60*24*5)  // subtruct 5 days
+// timeFromNowTest(1000*60*60*24*90)  // subtruct 90 days

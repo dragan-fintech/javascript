@@ -1,4 +1,24 @@
-// http://www.2ality.com/2011/11/keyword-parameters.html
+/*
+http://www.2ality.com/2011/11/keyword-parameters.html
+
+Perhaps the best way to use named argument in JS is to define function like this:
+
+    function foo({arg1, arg2} = {}) {
+        ...
+    }
+
+and then call them using following syntax:
+
+    foo({arg1: arg1val, arg2: arg2val})
+*/
+
+// usage:
+// too({ arg1: 'dragan', arg2: 'pera' })  // NOT OK
+// too
+function too(arg1, arg2) {
+    console.log('arg1=', arg1)
+    console.log('arg2=', arg2)
+}
 
 function foo(arg1, options)
 {
@@ -43,6 +63,8 @@ function goo_es6({pera, zika='zika_def'}={})
 }
 
 
+too({ arg1: 'dragan', arg2: 'pera' })  // NOT OK
+too(arg2='dragan', arg1='pera')  // NOT OK
 
 // foo('first argument', {zika: 5, pera:'pera_arg'})
 // goo('first argument', {pera:'perica', zika: 'zikica'})
@@ -53,6 +75,6 @@ function goo_es6({pera, zika='zika_def'}={})
 // foo_es6('first argument')
 // foo_es6('first argument', {pera:'perica'})
 // foo_es6('first argument', {zika: 6})
-goo_es6()
-goo_es6({pera: 'perica'})
-goo_es6({zika: 'zikica', pera: 'perica'})
+// goo_es6()
+// goo_es6({pera: 'perica'})
+// goo_es6({zika: 'zikica', pera: 'perica'})
