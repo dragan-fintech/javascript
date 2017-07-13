@@ -132,4 +132,4 @@ function query_any_ex(customers, prop_name, prop_value) {
 //findCustomersByAccount(customerData, '5841f79d3d352a36d35c3cb8')
 //query_underscore_ex(customerData, '5841f79d3d352a36d35c3cb8')
 query_ex(customerData, '5841f79d3d352a36d35c3cb8')
-query_any_ex(customerData, 'account', '5841f79d3d352a36d35c3cb8')
+//query_any_ex(customerData, 'account', '5841f79d3d352a36d35c3cb8')
