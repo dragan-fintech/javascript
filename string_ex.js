@@ -24,3 +24,11 @@ console.log(x)
 // print multiple lines
 console.log(
     'Hello\nToday is beaty day!\nYes, it is.')
+
+// split string
+const str = 'name=dragan'
+const fileds = str.split('=')
+console.log('------------------------------------');
+console.log(str);
+console.log(fileds)
+console.log('------------------------------------');
