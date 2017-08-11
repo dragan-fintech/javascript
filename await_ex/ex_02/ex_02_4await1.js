@@ -1,6 +1,10 @@
-let level_result = publishLevel(12, {data: true});
-console.log(level_result);
-console.log('called publishLevel!');
+test();
+
+async function test() {
+  let level_result = await publishLevel(12, {data: true});
+  console.log(level_result);
+  console.log('called publishLevel!');
+}
 
 async function publishLevel(user_id, level_data) {
   var user = await getUser(user_id);
