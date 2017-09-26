@@ -8,11 +8,7 @@ function sleep(milliseconds) {
 }
 
 function sleepPromise(milliseconds) {
-  return new Promise(function(resolve) {
-    setTimeout(function() {
-      resolve();
-    }, milliseconds);
-  });
+  return new Promise(resolve => setTimeout(resolve, milliseconds));
 }
 
 async function test() {
