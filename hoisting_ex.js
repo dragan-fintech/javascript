@@ -1,4 +1,6 @@
 /* 
+Interview Cake problem 17
+
 If we execute this Javascript, what will the browser's console show?
 
 Gotchas:
