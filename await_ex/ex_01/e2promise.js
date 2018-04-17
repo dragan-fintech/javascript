@@ -6,16 +6,16 @@ https://developers.google.com/web/fundamentals/getting-started/primers/promises
 
 */
 
-getUserTest(randomInt(20), randomInt(20));
-getUserTest(randomInt(20), randomInt(20));
-getUserTest(randomInt(20), randomInt(20));
+getUserTest(randomInt(20), randomInt(20))
+getUserTest(randomInt(20), randomInt(20))
+getUserTest(randomInt(20), randomInt(20))
 
 function getUserTest(userId, wait) {
-  console.log(`------------ ${Date.now()}: user=${userId} wait=${wait} ------------`);
+  console.log(`------------ ${Date.now()}: user=${userId} wait=${wait} ------------`)
   getUser(userId, wait).then((user) => {
-    console.log(`------------ ${Date.now()}: ${JSON.stringify(user)} ------------`);
+    console.log(`------------ ${Date.now()}: ${JSON.stringify(user)} ------------`)
   }, (err) => {
-    console.log(`------------ ${Date.now()}: ${err.message} ------------`);
+    console.log(`------------ ${Date.now()}: ${err.message} ------------`)
   });
 }
 
@@ -30,14 +30,14 @@ function getUser(userId, wait) {
 
         resolve(user);
       } else {
-        reject(new Error(`No user with id ${userId}!`));
+        reject(new Error(`No user with id ${userId}!`))
       }
-    }, wait*100);
+    }, wait*100)
   });
 
-  return p;
+  return p
 }
 
 function randomInt(n) {
-  return Math.floor((Math.random()*n)+1);
+  return Math.floor((Math.random()*n)+1)
 }
