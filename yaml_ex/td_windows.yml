@@ -1,1 +1,16 @@
 app: c:\tools\cmapp.exe
+
+list:
+  - element1:
+      prop1: el 1 property 1
+      prop2: el 1 prop 2
+  - element2:
+      prop1: 10
+      prop2: element 2 property 2
+
+list2:
+    - id: 5
+      prop1: i5 prop1
+    - id: 7
+      prop1: i7 prop1
+
