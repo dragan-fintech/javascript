@@ -32,3 +32,8 @@ console.log('------------------------------------');
 console.log(str);
 console.log(fileds)
 console.log('------------------------------------');
+
+// does a string contains substring
+const string = 'dragan nikolic'
+const substring = 'nik'
+console.log(string.includes(substring))  // true
