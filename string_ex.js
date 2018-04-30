@@ -37,3 +37,7 @@ console.log('------------------------------------');
 const string = 'dragan nikolic'
 const substring = 'nik'
 console.log(string.includes(substring))  // true
+
+// replace a substring with another string
+const string = "Visit Microsoft"
+const res = string.replace("Microsoft", "W3Schools")
