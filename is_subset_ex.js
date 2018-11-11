@@ -6,7 +6,13 @@ Run: node <file.js>
 2017-07-24
 */
 
-const isSubset = require('is-subset')
+
+// is-subset can be used for objects only
+const isSubset = require('is-subset')  
+
+// obj-subset is more powerful, can be used to check if an object is subset of
+// another, but also if an arrays of objects is subset of another
+const objSubset = require('obj-subset')  
 
 const obj1 = { 
     _id: '5841fdd73d352a36d35c3cbe',
@@ -35,5 +41,55 @@ const obj2 = {
     name: 'Acc1 Merchant 1500926095444',
 }
 
-console.log(isSubset(obj1, obj2))  // true
-console.log(isSubset(obj2, obj1))  // false
+const users1 = [
+  {
+    id: 1,
+    name: 'Dragan',
+    email: 'dragan@n.com'
+  },
+  {
+    id: 2,
+    name: 'Pera',
+    email: 'pera@n.com'
+  },
+  {
+    id: 3,
+    name: 'Zika',
+    email: 'zika@n.com'
+  }
+]
+
+const users2 = [
+  {
+    id: 1,
+    name: 'Dragan',
+    email: 'dragan@n.com'
+  },
+  {
+    id: 3,
+    name: 'Zika',
+    email: 'zika@n.com'
+  }
+]
+
+function is_subset_for_objects() {
+  console.log('is_subset_for_objects')
+  console.log(isSubset(obj1, obj2))  // true
+  console.log(isSubset(obj2, obj1))  // false
+}
+
+function obj_subset_for_objects() {
+  console.log('obj_subset_for_objects')
+  console.log(objSubset(obj1, obj2))  // true
+  console.log(objSubset(obj2, obj1))  // false
+}
+
+function obj_subset_for_arrays() {
+  console.log('obj_subset_for_arrays')
+  console.log(objSubset(users1, users2))  // true
+  console.log(objSubset(users2, users1))  // false
+}
+
+is_subset_for_objects()
+obj_subset_for_objects()
+obj_subset_for_arrays()

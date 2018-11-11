@@ -32,3 +32,12 @@ console.log('------------------------------------');
 console.log(str);
 console.log(fields)
 console.log('------------------------------------');
+
+// does a string contains substring
+const string = 'dragan nikolic'
+const substring = 'nik'
+console.log(string.includes(substring))  // true
+
+// replace a substring with another string
+const string = "Visit Microsoft"
+const res = string.replace("Microsoft", "W3Schools")
