@@ -1,7 +1,7 @@
 // load a single yml file example
 
 yaml = require('js-yaml');
-fs   = require('fs');
+fs = require('fs');
 
 // Get document, or throw exception on error
 try {
