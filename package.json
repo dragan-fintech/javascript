@@ -14,10 +14,10 @@
   "license": "ISC",
   "dependencies": {
     "async": "^2.4.0",
-    "autoit": "^1.1.9",
     "cwd": "^0.10.0",
     "is-subset": "^0.1.1",
     "js-yaml": "^3.11.0",
+    "jsutil": "git+ssh://git@github.com/dragan-nikolic/jsutil.git",
     "logplease": "^1.2.14",
     "obj-subset": "^1.2.0",
     "prompt": "^1.0.0",

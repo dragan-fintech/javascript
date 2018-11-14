@@ -27,10 +27,10 @@ console.log(
 
 // split string
 const str = 'name=dragan'
-const fileds = str.split('=')
+const fields = str.split('=')
 console.log('------------------------------------');
 console.log(str);
-console.log(fileds)
+console.log(fields)
 console.log('------------------------------------');
 
 // does a string contains substring
