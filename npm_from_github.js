@@ -1,7 +1,7 @@
 /*
 npm_jsutil_ex.js
 
-Demonstrate how to use via NPM another github module
+Demonstrate how to use a module via NPM github
 
 Run: node <file.js>
 

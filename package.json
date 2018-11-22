@@ -21,6 +21,7 @@
     "logplease": "^1.2.14",
     "obj-subset": "^1.2.0",
     "prompt": "^1.0.0",
+    "tempemail_module": "git+ssh://git@bitbucket.org/gamesoftlab/tempemail.git",
     "underscore": "^1.8.3"
   },
   "devDependencies": {
