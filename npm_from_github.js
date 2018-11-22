@@ -1,5 +1,5 @@
 /*
-npm_jsutil_ex.js
+npm_from_github.js
 
 Demonstrate how to use a module via NPM github
 
