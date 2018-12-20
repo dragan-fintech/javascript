@@ -28,6 +28,8 @@ function count_values() {
 
         return countedNamesAcc
     }, {}) 
+
+    console.log('countedNames', countedNames)
 }
 
 
